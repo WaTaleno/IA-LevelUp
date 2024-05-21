@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - Servicios para Vehículos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Barra de navegación -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <h1 class="text-white text-2xl font-bold">Servicios para Vehículos</h1>
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="flex space-x-4 text-white">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <!-- Eliminado el enlace de "Servicios" -->
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mx-auto my-8">
+        <h2 class="text-3xl font-bold mb-4">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Lista de servicios -->
+            <div>
+                <ul>
+                    <!-- Servicio 1 -->
+                    <li class="mb-8">
+                        <h3 class="text-xl font-semibold">Mantenimiento de vehículos</h3>
+                        <p class="text-gray-600">Ofrecemos servicios de mantenimiento programado y reparación de vehículos. Nuestros técnicos altamente calificados aseguran que su vehículo reciba el cuidado que se merece.</p>
+                    </li>
+                    <!-- Servicio 2 -->
+                    <li class="mb-8">
+                        <h3 class="text-xl font-semibold">Trámite de documentos vehiculares</h3>
+                        <p class="text-gray-600">Realizamos gestiones para trámites de documentación vehicular, como inscripción, transferencia de propiedad, y más. Deje que nos encarguemos de la burocracia por usted.</p>
+                    </li>
+                    <!-- Servicio 3 -->
+                    <li class="mb-8">
+                        <h3 class="text-lg font-semibold mt-2">Trabajo de Pintura</h3>
+                        <p class="text-gray-600">Servicio de Pintura con especialistas.</p>
+                    </li>
+                    <!-- Agregar más servicios aquí -->
+                </ul>
+            </div>
+            <!-- Formulario de solicitud -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Solicitar Servicio</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" type="text" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="apellido">Apellido</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="apellido" type="text" placeholder="Ingrese su apellido">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Teléfono</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="telefono" type="tel" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo Electrónico</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <!-- Lista desplegable de servicios -->
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="servicio">Servicio</label>
+                        <select id="servicio" name="servicio" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="mantenimiento">Mantenimiento de vehículos</option>
+                            <option value="documentos">Trámite de documentos vehiculares</option>
+                            <option value="documentos">Trabajo de pintura</option>
+                            <!-- Agregar más opciones si es necesario -->
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="fecha">Fecha de Cita</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fecha" type="date">
+                    </div>
+                    <!-- Eliminado el botón "Solicitar servicio" -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <div class="container mx-auto">
+            <p class="mb-2">Contáctanos:</p>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Teléfono</a></li>
+                <li><a href="#" class="hover:text-gray-300">Correo electrónico</a></li>
+                <li><a href="#" class="hover:text-gray-300">Ubicación</a></li>
+            </ul>
+            <p class="mt-2">Derechos de autor © 2024 Servicios para Vehículos</p>
+        </div>
+    </footer>
+</body>
+</html>
